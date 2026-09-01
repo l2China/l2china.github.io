@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineage 2 中国 - #1 天堂2服 (Interlude, Gracia, High Five, Classic)</title>
+    
+    <!-- Unique SEO Meta Tags with All Chronicles & Keywords in Chinese -->
+    <meta name="description" content="Lineage 2 中国官方公益服与核心社区。畅玩经典版本：Interlude、Gracia Final、High Five、Classic。服务器稳定流畅无延迟，全面支持 Windows、Linux、macOS 及 Android 移动端！">
+    <meta name="keywords" content="Lineage 2 中国, 天堂2国服, L2 Interlude, L2 High Five, L2 Classic, MMORPG 私服, Dalam World">
+    <meta name="author" content="L2 China Community">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="Lineage 2 中国 - Interlude, Gracia, High Five & Classic">
+    <meta property="og:description" content="史诗级 PvP 战斗、宏大的血盟攻城战，汇聚海量硬核玩家。立即加入我们！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://l2china.github.io">
+    <meta property="og:image" content="https://srv6-cdn.dalam.world/monthly_2026_09/banner-2.jpg.24568f8523c6a464171e58703ac6e759.jpg?key=cn_banner_hash_9012">
+
+    <style>
+        :root {
+            --bg-color: #080b12;
+            --card-bg: #111722;
+            --accent-color: #ef4444;
+            --accent-hover: #f87171;
+            --text-color: #d1d5db;
+            --text-bright: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding-bottom: 60px;
+        }
+
+        /* Animated Video Header */
+        .cn-hero {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .cn-hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .cn-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(8, 11, 18, 0.4), rgba(8, 11, 18, 0.93));
+            z-index: 2;
+        }
+
+        .cn-hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 950px;
+            padding: 0 20px;
+        }
+
+        .cn-hero h1 {
+            font-size: 3.3rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+
+        .cn-hero p {
+            font-size: 1.3rem;
+            color: var(--text-bright);
+            margin-bottom: 30px;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-bright);
+            border: 2px solid var(--accent-color);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+            border: 1px solid #1a2333;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #1a2333;
+            padding-bottom: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .chronicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .chronicle-badge {
+            background: #172133;
+            padding: 18px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .chronicle-badge h4 {
+            color: var(--text-bright);
+            margin-bottom: 6px;
+            font-size: 1.1rem;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            background: #000;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery a img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s, border-color 0.3s;
+            border: 1px solid #1a2333;
+        }
+
+        .gallery a img:hover {
+            transform: scale(1.03);
+            border-color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            border-top: 1px solid #1a2333;
+            padding-top: 25px;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .cn-hero h1 {
+                font-size: 2.2rem;
+            }
+            .cn-hero p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Video Section with Unique GET-Hash -->
+    <header class="cn-hero">
+        <video autoplay muted loop playsinline poster="https://srv6-cdn.dalam.world/monthly_2026_09/banner-2.jpg.24568f8523c6a464171e58703ac6e759.jpg?key=cn_poster_7712">
+            <source src="https://srv6-cdn.dalam.world/monthly_2026_09/banner.mp4.6ae53b432a1c13861af870b2ce6b9154.mp4?key=cn_video_src_4431" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <div class="cn-overlay"></div>
+        <div class="cn-hero-content">
+            <h1>Lineage 2 中国</h1>
+            <p>为中国玩家打造的顶级天堂2 MMORPG 游戏体验：从经典版本到全新纪元</p>
+            <div class="btn-group">
+                <a href="https://dalam.world/#modal-register" class="btn">注册账号</a>
+                <a href="https://dalam.world/#modal-downloads" class="btn btn-outline">下载客户端</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- About Project -->
+        <section class="card">
+            <h2>欢迎来到中国天堂2玩家社区！</h2>
+            <p><strong>Lineage 2 中国</strong> 是硬核 MMORPG 与血盟攻城战爱好者的专属聚集地。我们致力于提供极其稳定、零延迟的高性能服务器，完美融合了传奇的 <strong>Interlude</strong>、<strong>Gracia Final</strong>、<strong>High Five</strong> 与 <strong>Classic</strong> 经典版本精髓。</p>
+            <p>在这里，重燃亚丁大陆的青春热血，组建最强战盟，书写属于你的史诗篇章。</p>
+            
+            <h3 style="color: var(--text-bright); margin-top: 25px; margin-bottom: 15px;">支持的版本与全平台兼容</h3>
+            <div class="chronicles-grid">
+                <div class="chronicle-badge">
+                    <h4>Interlude & Classic</h4>
+                    <p>最纯正的经典设定，激情无限的 PvP 竞技与世界首领挑战。</p>
+                </div>
+                <div class="chronicle-badge">
+                    <h4>Gracia Final</h4>
+                    <p>领空飞艇、领地战与宏大的多人战术对抗。</p>
+                </div>
+                <div class="chronicle-badge">
+                    <h4>High Five</h4>
+                    <p>平衡的职业技能、优化的系统界面与快节奏对抗。</p>
+                </div>
+                <div class="chronicle-badge">
+                    <h4>跨平台多端互通</h4>
+                    <p>全面完美支持 Windows、Linux、macOS 以及 Android 移动端流畅运行。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Preview -->
+        <section class="card">
+            <h2>游戏世界实机视频预览</h2>
+            <div class="video-container">
+                <video controls poster="https://srv6-cdn.dalam.world/monthly_2026_07/05wall01_1600.jpg.a570a5f746d364f9a558c5442828e279.jpg?key=cn_prev_332">
+                    <source src="https://srv6-cdn.dalam.world/monthly_2026_07/355507094_DalamWorldDarkElf.mp4.54c5a2784a3c1b2e7561c610338c39c9.mp4?key=cn_gameplay_991" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+            </div>
+        </section>
+
+        <!-- Useful Links -->
+        <section class="card">
+            <h2>实用导航与服务链接</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 12px;">🌐 <strong>官方综合门户：</strong> <a href="https://dalam.world/" target="_blank" style="color: var(--accent-color);">dalam.world</a></li>
+                <li style="margin-bottom: 12px;">📖 <strong>规则与知识库：</strong> <a href="https://dalam.world/faq" target="_blank" style="color: var(--accent-color);">服务器指南与常见问题 (FAQ)</a></li>
+                <li style="margin-bottom: 12px;">💬 <strong>社区交流论坛：</strong> <a href="https://dalam.world/forums/" target="_blank" style="color: var(--accent-color);">玩家讨论区与公告栏</a></li>
+                <li style="margin-bottom: 12px;">📥 <strong>客户端下载中心：</strong> <a href="https://dalam.world/#modal-downloads" target="_blank" style="color: var(--accent-color);">获取游戏安装包</a></li>
+                <li style="margin-bottom: 12px;">🎮 <strong>官方 Discord 频道：</strong> <a href="https://link.dalam.world/discord" target="_blank" style="color: var(--accent-color);">加入我们的玩家社群</a></li>
+            </ul>
+        </section>
+
+        <!-- Gallery with Unique GET Hashes -->
+        <section class="card">
+            <h2>亚丁大陆游戏截图长廊</h2>
+            <p>点击下方任意图片即可快速访问主服务器端口：</p>
+            <div class="gallery">
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_08/camprest.jpg.3dba6692564993032aad81dd89b5216f.jpg?key=cn_img_1" alt="L2 China 1"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/888888.jpg.ca2774ab512bc63ec97b58e22fe0d049.jpg?key=cn_img_2" alt="L2 China 2"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/1233123.jpg.bc3a7363302cdea5817a7bd6861f5881.jpg?key=cn_img_3" alt="L2 China 3"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/78ba9246e77f8d1905d8506dbcf2156b.jpg.059226f330ec28f5d65808c9e1980b39.jpg?key=cn_img_4" alt="L2 China 4"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/05wall01_1600.jpg.a570a5f746d364f9a558c5442828e279.jpg?key=cn_img_5" alt="L2 China 5"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/1228497862_image(7).jpg.dc18f3187ad74e54523cf74c2524087d.jpg?key=cn_img_6" alt="L2 China 6"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/mirco-cabbia-elfa-fin-2-4.jpg.b061be845dec1c5f4873525d1c37fb8a.jpg?key=cn_img_7" alt="L2 China 7"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Bridge.jpg.be9462d32ab23a4f972a3e6d1cf58765.jpg?key=cn_img_8" alt="L2 China 8"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/dv3.jpg.7bcf3433a916fda45b4edab362f40cd2.jpg?key=cn_img_9" alt="L2 China 9"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Oren7.jpg.d3ec8b095aea0ef5609d570e2935aebe.jpg?key=cn_img_10" alt="L2 China 10"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/FoM2.jpg.42658076d8767b9ef46c789f3b1377d1.jpg?key=cn_img_11" alt="L2 China 11"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Demilika19-1.jpg.a2650d2979d012dadaa96ac813908b46.jpg?key=cn_img_12" alt="L2 China 12"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Demilika9-1.jpg.349e6b44cc7053ae704f1a69cfff3528.jpg?key=cn_img_13" alt="L2 China 13"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/411008428_.jpg.863a6523ccafdd158ad1ea764ba102e8.jpg?key=cn_img_14" alt="L2 China 14"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/925499585_ChatGPTImage132026.17_43_17.jpg.c97b3178b0a56adf69a25d56e03a9a0c.jpg?key=cn_img_15" alt="L2 China 15"></a>
+            </div>
+        </section>
+
+    </div>
+  <script src="https://res.dalam.world/dwmw.js"></script>
+    <footer>
+        <p>&copy; 2026 Lineage 2 中国. 保留所有权利。</p>
+        <p>官方核心门户：<a href="https://dalam.world">dalam.world</a></p>
+    </footer>
+
+</body>
+</html>
